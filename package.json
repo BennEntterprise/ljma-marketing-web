@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node dist/server.js",
     "build": "npm run build-client & npm run build-server",
+    "dev-client": "cd ljma-client && npm run start",
     "build-server": "tsc",
     "build-client": "cd ljma-client && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
