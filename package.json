@@ -5,8 +5,10 @@
   "main": "server.js",
   "scripts": {
     "start": "node dist/server.js",
-    "build": "npm run build-client & npm run build-server",
-    "dev-client": "cd ljma-client && npm run start",
+    "install-client": "cd ljma-client && npm i ",
+    "build": "cd ljma-client  && npm install && npm run build",
+    "rebuild": "cd ljma-client  && npm run build",
+    "dev-client": "npm run start --prefix ljma-client",
     "build-server": "tsc",
     "build-client": "cd ljma-client && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
