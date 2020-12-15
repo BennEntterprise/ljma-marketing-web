@@ -1,0 +1,19 @@
+{
+  "name": "ljma-marketing-web",
+  "version": "1.0.0",
+  "description": "A web page for Laura Jean Music Academy",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bennentterprise/ljma-marketing-web.git"
+  },
+  "author": "Kyle Bennett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bennentterprise/ljma-marketing-web/issues"
+  },
+  "homepage": "https://github.com/bennentterprise/ljma-marketing-web#readme"
+}
