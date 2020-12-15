@@ -28,7 +28,7 @@ app.get('/*', function (req:any, res:any) {
 })
 
 app.listen(port, () => {
-  console.log(`Make sure you build the project!`)
+  console.log(`Make sure you rebuilt the project! ---> 'npm run rebuild'`)
   console.log(`Now Listening on: http://${host}:${port}`)
 })
 

@@ -10,6 +10,9 @@
     "build-server": "tsc",
     "build-client": "cd ljma-client  && npm install && npm run build",
     "build": "npm run build-client && npm run build-server",
+    "rebuild-client": "npm run build --prefix ljma-client",
+    "rebuild-server": "npm run build-server",
+    "rebuild": "npm run rebuild-client && npm run rebuild-server",
     "dev-client": "npm run start --prefix ljma-client",
     "push-to-staging": "git push heroku-staging develop:main",
     "push-to-production": "git push heroku-production main"
