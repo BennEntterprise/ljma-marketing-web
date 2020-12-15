@@ -69,8 +69,8 @@ Once you are finished with this, run `npm run rebuild` to build a production gra
 
 There are two deployments for this project
 
-- [Production (harmonix.herokuapp.com)](https://ljma.herokuapp.com)
-- [Staging (harmonix-develop.heroku.com)](https://ljma-develop.herokuapp.com)
+- [Production (ljma.herokuapp.com)](https://ljma.herokuapp.com)
+- [Staging (ljma-develop.heroku.com)](https://ljma-develop.herokuapp.com)
 
 When you are on the development branch you can push to the staging area with the following command:
 
