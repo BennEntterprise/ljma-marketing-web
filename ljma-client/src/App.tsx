@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from './logo.svg'
-import './App.css'
+import './App.scss'
 import MyComponent from './MyComp'
 import Awesome from './Awesome'
 import Navbar from './components/Navbar'
