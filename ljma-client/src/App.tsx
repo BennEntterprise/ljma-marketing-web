@@ -4,26 +4,29 @@ import './App.css'
 import MyComponent from './MyComp'
 import Awesome from './Awesome'
 import Navbar from './components/Navbar'
+
+// ********************
+// Import The Pagelets
+// ********************
+import Welcome from './pagelets/1Welcome/Welcome'
+import AboutUs from './pagelets/2AboutUs/AboutUs'
+import Courses from './pagelets/3Courses/Courses'
+import ArtistDevelopmentProgram from './pagelets/4ArtistDevelopmentProgram/ArtistDevelopmentProgram'
+import Exams from './pagelets/5Exams/Exams'
+import MeetTheTeachers from './pagelets/6MeetTheTeachers/MeetTheTeachers'
+import BookLessons from './pagelets/7BookLessons/BookLessons'
+
 const App = () => {
   return (
     <>
       <Navbar />
-      <div className='App'>
-        <header className='App-header'>
-          <img src={logo} className='App-logo' alt='logo' />
-          <p>Laura Jean Music Academy</p>
-          <a
-            className='App-link'
-            href='https://reactjs.org'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            Learn React
-          </a>
-          <MyComponent />
-          <Awesome />
-        </header>
-      </div>
+      <Welcome />
+      <AboutUs />
+      <Courses />
+      <ArtistDevelopmentProgram />
+      <Exams />
+      <MeetTheTeachers />
+      <BookLessons />
     </>
   )
 }
