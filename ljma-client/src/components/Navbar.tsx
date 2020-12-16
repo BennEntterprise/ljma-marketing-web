@@ -44,7 +44,7 @@ const nb = () => {
             </Nav.Link>
           </Link>
           <Link to='/contact'>
-            <Nav.Link className='liberation-sans-bold'>CONTACT</Nav.Link>
+            <Nav.Link className='liberation-sans-bold'>CONTACT US</Nav.Link>
           </Link>
         </Nav>
       </Navbar.Collapse>
