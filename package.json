@@ -15,7 +15,8 @@
     "rebuild": "npm run rebuild-client && npm run rebuild-server",
     "dev-client": "npm run start --prefix ljma-client",
     "push-to-staging": "git push heroku-staging develop:main",
-    "push-to-production": "git push heroku-production main"
+    "push-to-production": "git push heroku-production main",
+    "ngrok": "ngrok http 3000 -subdomain=ljma"
   },
   "repository": {
     "type": "git",

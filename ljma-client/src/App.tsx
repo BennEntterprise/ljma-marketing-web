@@ -25,21 +25,18 @@ const App = () => {
     <>
       <Router>
         <Route exact path='/'>
-          <AuditHoop variant='complete'>
-            <Navbar />
-          </AuditHoop>
-          <AuditHoop variant='pending-approval'>
-            <Welcome />
-          </AuditHoop>
-          <AuditHoop variant='wip'>
-            <AboutUs />
-          </AuditHoop>
+          <Navbar />
+          <Welcome />
+          <AboutUs />
           <Courses />
           <ArtistDevelopmentProgram />
           <Exams />
           <MeetTheTeachers />
           <BookLessons />
           {isDev() && <Typefaces />}
+          <AuditHoop variant='complete'></AuditHoop>
+          <AuditHoop variant='pending-approval'></AuditHoop>
+          <AuditHoop variant='wip'></AuditHoop>
         </Route>
       </Router>
     </>
