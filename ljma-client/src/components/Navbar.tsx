@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navbar, Nav } from 'react-bootstrap'
-// import SquadHarmonixBrandBanner from '../images/squad-2020-website-logo(trimmed).png'
+import LJMANavBrand from '../images/logos/LJMA Black(trimmed).png'
 
 import { charcoal, offBlack } from '../constants/Colors'
 import { Link } from 'react-router-dom'
@@ -13,7 +13,11 @@ const nb = () => {
       expand='lg'
     >
       <Navbar.Brand href='/'>
-        <img src={'#'} alt='squad harmonics banner' width='100px' />
+        <img
+          src={LJMANavBrand}
+          alt='Laura JEan Music Academy Brand mark'
+          width='100px'
+        />
       </Navbar.Brand>
       <Navbar.Toggle
         className='navbar-light'
@@ -27,7 +31,7 @@ const nb = () => {
             justifyContent: 'flex-end',
           }}
         >
-          <Link to='/'>
+          <Link to='/home'>
             <Nav.Link
               className='liberation-sans-bold'
               style={{ color: offBlack }}
@@ -35,17 +39,29 @@ const nb = () => {
               HOME
             </Nav.Link>
           </Link>
-          <Link to='https://squadharmonix.com/academy'>
-            <Nav.Link className='liberation-sans-bold'>SQUAD ACADEMY</Nav.Link>
-          </Link>
-          <Link to='https://squadharmonix.com/harmonix'>
-            <Nav.Link className='liberation-sans-bold'>
-              SQUAD HARMONIX&trade;
-            </Nav.Link>
-          </Link>
-          <Link to='/contact'>
-            <Nav.Link className='liberation-sans-bold'>CONTACT</Nav.Link>
-          </Link>
+          <Nav.Link
+            href='https://squadharmonix.com/academy'
+            className='liberation-sans-bold'
+            style={{ color: offBlack }}
+          >
+            SQUAD ACADEMY
+          </Nav.Link>
+
+          <Nav.Link
+            href='https://squadharmonix.com/harmonix'
+            className='liberation-sans-bold'
+            style={{ color: offBlack }}
+          >
+            SQUAD HARMONIX&trade;
+          </Nav.Link>
+
+          <Nav.Link
+            href='/contact'
+            className='liberation-sans-bold'
+            style={{ color: offBlack }}
+          >
+            CONTACT
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
