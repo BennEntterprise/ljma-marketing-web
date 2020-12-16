@@ -25,8 +25,12 @@ const App = () => {
     <>
       <Router>
         <Route exact path='/'>
-          <Navbar />
-          <Welcome />
+          <AuditHoop variant='pending-approval'>
+            <Navbar />
+          </AuditHoop>
+          <AuditHoop variant='wip'>
+            <Welcome />
+          </AuditHoop>
           <AboutUs />
           <Courses />
           <ArtistDevelopmentProgram />
@@ -35,8 +39,6 @@ const App = () => {
           <BookLessons />
           {isDev() && <Typefaces />}
           <AuditHoop variant='complete'></AuditHoop>
-          <AuditHoop variant='pending-approval'></AuditHoop>
-          <AuditHoop variant='wip'></AuditHoop>
         </Route>
         <Route exact path='/contact'>
           <IndependentContactPagelet />
