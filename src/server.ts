@@ -8,6 +8,7 @@ dotenv.config({ path: './config.env' })
 // Initialize an Expresss Application
 const port = process.env.PORT || 8080
 const host = process.env.HOST || 'localhost'
+const NODE_ENV= process.env.NODE_ENV || 'development'
 const app = express()
 
 app.use(favicon(__dirname +'/../'+ '/ljma-client/build/favicon.ico'))
