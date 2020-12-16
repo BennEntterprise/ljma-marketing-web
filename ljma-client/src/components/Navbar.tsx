@@ -55,13 +55,13 @@ const nb = () => {
             SQUAD HARMONIX&trade;
           </Nav.Link>
 
-          <Nav.Link
+          {/* <Nav.Link
             href='/contact'
             className='liberation-sans-bold'
             style={{ color: offBlack }}
           >
             CONTACT
-          </Nav.Link>
+          </Nav.Link> */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>

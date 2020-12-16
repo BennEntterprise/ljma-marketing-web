@@ -12,6 +12,7 @@ import Typefaces from './constants/Typefaces'
 // ********************
 import Navbar from './components/Navbar'
 import IndependentContactPagelet from './components/IndependentContactPagelet'
+import ComingSoon from './pagelets/0ComingSoon/ComingSoon'
 import Welcome from './pagelets/1Welcome/Welcome'
 import AboutUs from './pagelets/2AboutUs/AboutUs'
 import Courses from './pagelets/3Courses/Courses'
@@ -24,25 +25,30 @@ const App = () => {
   return (
     <>
       <Router>
+        <Navbar />
         <Route exact path='/'>
-          <AuditHoop variant='pending-approval'>
-            <Navbar />
-          </AuditHoop>
-          <AuditHoop variant='wip'>
-            <Welcome />
-          </AuditHoop>
-          <AboutUs />
-          <Courses />
-          <ArtistDevelopmentProgram />
-          <Exams />
-          <MeetTheTeachers />
-          <BookLessons />
-          {isDev() && <Typefaces />}
-          <AuditHoop variant='complete'></AuditHoop>
+          <ComingSoon />
         </Route>
+
+        {/* <AuditHoop variant='complete'>
+        </AuditHoop>
+        <AuditHoop variant='pending-approval'>
+          <Navbar />
+        </AuditHoop>
+        <AuditHoop variant='wip'>
+          <Welcome />
+        </AuditHoop>
+        <AboutUs />
+        <Courses />
+        <ArtistDevelopmentProgram />
+        <Exams />
+        <MeetTheTeachers />
+        <BookLessons />
+        {isDev() && <Typefaces />}
+        <AuditHoop variant='complete'></AuditHoop>
         <Route exact path='/contact'>
           <IndependentContactPagelet />
-        </Route>
+        </Route> */}
       </Router>
     </>
   )
