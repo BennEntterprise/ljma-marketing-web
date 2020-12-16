@@ -1,7 +1,9 @@
 import React from 'react'
-
+import './ArtistDevelopmentProgram.scss'
 const ArtistDevelopmentProgram = () => {
-  return <div>Artist Development Program</div>
+  return (
+    <div id='artistdevelopmentprogram-pagelet'>Artist Development Program</div>
+  )
 }
 
 export default ArtistDevelopmentProgram

@@ -1,7 +1,7 @@
 import React from 'react'
-
+import './Courses.scss'
 const Courses = () => {
-  return <div>Courses</div>
+  return <div id='courses-pagelet'> Courses</div>
 }
 
 export default Courses

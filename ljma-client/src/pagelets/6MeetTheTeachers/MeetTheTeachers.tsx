@@ -1,7 +1,7 @@
 import React from 'react'
-
+import './MeetTheTeachers.scss'
 const MeetTheTeachers = () => {
-  return <div>Meet The Teachers</div>
+  return <div id='meettheteachers-pagelet'>Meet The Teachers</div>
 }
 
 export default MeetTheTeachers
