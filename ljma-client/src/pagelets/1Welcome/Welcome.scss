@@ -1,3 +1,86 @@
 #welcome-pagelet {
-  background-color: red;
+  background-color: #202020;
+  background-image: url('./BannerImg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  min-height: 300px;
+  max-height: 600px;
+  width: 100%;
+}
+
+.banner-text {
+  color: white;
+  text-align: right;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-left: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  h3,
+  h5,
+  h6 {
+    width: fit-content;
+    background-color: rgba(1, 1, 1, 0.05);
+    position: relative;
+    right: 0%;
+    color: white;
+  }
+}
+
+/********************/
+/* Adjustment for XS Size Screen*/
+/********************/
+@media (max-width: 576px) {
+  #welcome-pagelet {
+    background-size: cover;
+    min-height: 245px;
+    max-height: 315px;
+    width: 100%;
+  }
+}
+/********************/
+/* Adjustment for SM Size Screen*/
+/********************/
+@media (min-width: 576px) and (max-width: 768px) {
+  #welcome-pagelet {
+    background-size: cover;
+  }
+}
+/********************/
+/* Adjustment for MD Size Screen*/
+/********************/
+@media (min-width: 768px) and (max-width: 992px) {
+  #welcome-pagelet {
+    background-size: cover;
+    min-height: 245px;
+    max-height: 375px;
+    width: 100%;
+  }
+}
+/********************/
+/* Adjustment for LG Size Screen*/
+/********************/
+@media (min-width: 992px) and (max-width: 1200px) {
+  #welcome-pagelet {
+    background-size: cover;
+    min-height: 400px;
+    max-height: 525px;
+    width: 100%;
+  }
+}
+/********************/
+/* Adjustment for XL Size Screen*/
+/********************/
+@media (min-width: 1200px) {
+  #welcome-pagelet {
+    background-size: cover;
+    min-height: 245px;
+    max-height: 620px;
+    width: 100%;
+  }
 }
