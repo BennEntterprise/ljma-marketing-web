@@ -1,0 +1,31 @@
+.font-mini {
+  font-size: 0.75rem;
+}
+.font-p {
+  font-size: 1rem;
+}
+.font-h6 {
+  font-size: 1.2rem;
+}
+.font-h5 {
+  font-size: 1.4rem;
+}
+.font-h4 {
+  font-size: 1.5rem;
+}
+.font-h3 {
+  font-size: 1.6rem;
+}
+.font-h2 {
+  font-size: 2rem;
+}
+.font-h1 {
+  font-size: 2.25rem;
+}
+.font-jumbo {
+  font-size: 3rem;
+}
+
+.font-underline {
+  text-decoration: underline;
+}

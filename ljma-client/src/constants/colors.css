@@ -1,0 +1,73 @@
+:root {
+  /* Pinks/Purples */
+  --flower: #fec5e9;
+  --magenta: #fa4faa;
+  --magentaDark: #ff00b3;
+  --lightPurple: #c493f9;
+  --purple: #a800d6;
+
+  /* Blues */
+  --tortise: #99d5ca;
+  --teal: #00c0c3;
+  --seagreen: #01a589;
+
+  /* White/Black/Grey */
+  --charcoal: #202020;
+  --obsidian: #090909;
+
+  --white: #fff;
+  --black: #000;
+  --grey: #e5e5e5;
+
+  --offBlack: #010101;
+}
+
+.teal-outline {
+  border: 3px solid var(--teal);
+}
+
+.magenta-outline {
+  border: 3px solid var(--magenta);
+}
+
+.purple-outline {
+  border: 3px solid var(--purple);
+}
+.bg-grey {
+  background-color: var(--grey);
+}
+
+.bg-magenta {
+  background-color: var(--magenta);
+}
+
+.bg-purple {
+  background-color: var(--purple);
+}
+
+.bg-teal {
+  background-color: var(--teal);
+}
+.bg-flower {
+  background-color: var(--flower);
+}
+
+.bg-tortise {
+  background-color: var(--tortise);
+}
+
+.bg-lightpurple {
+  background-color: var(--lightPurple);
+}
+
+.color-teal {
+  color: var(--teal);
+}
+
+.color-magenta {
+  color: var(--magenta);
+}
+
+.color-purple {
+  color: var(--purple);
+}

@@ -1,11 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 
-// Bring In Bootstrap and Local Styles
+// Bring In Bootstrap and THEN Local Styles
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './index.scss'
+import './constants/styleOverrides.scss'
 ReactDOM.render(
   <React.StrictMode>
     <App />

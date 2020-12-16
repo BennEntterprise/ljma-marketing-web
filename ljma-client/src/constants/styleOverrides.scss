@@ -1,0 +1,13 @@
+@import './fonts.css';
+@import './colors.css';
+
+.navbar-light {
+  .navbar-nav {
+    .nav-link {
+      color: var(--offBlack);
+    }
+  }
+}
+* {
+  font-family: var(--defaultFont);
+}

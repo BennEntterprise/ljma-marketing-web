@@ -1,0 +1,13 @@
+.audit-hoop {
+  border-width: 3px;
+  border-style: dashed;
+}
+.complete-hoop {
+  border-color: green;
+}
+.pending-approval-hoop {
+  border-color: rgb(172, 172, 35);
+}
+.wip-hoop {
+  border-color: red;
+}

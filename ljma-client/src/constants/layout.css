@@ -1,0 +1,33 @@
+:root {
+  /* Creates construction lines */
+  --construction: 4.5px dashed Grey;
+  --construction-red: 4.5px dotted red;
+  --construction-green: 4.5px dotted green;
+  --construction-padding: 5px;
+}
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+.construction-padding {
+  padding: var(--construction-padding);
+}
+.construction-lines {
+  border: var(--construction);
+}
+.construction-lines-red {
+  border: var(--construction-red);
+}
+
+.h-flex-container {
+  display: flex;
+  flex-direction: row;
+}
+.v-flex-container {
+  display: flex;
+  flex-direction: column;
+}
