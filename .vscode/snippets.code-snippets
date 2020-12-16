@@ -38,5 +38,37 @@
       "$0"
     ],
     "description": "Adds a comment section header to the piece"
+  },
+  "breakpoints": {
+    "scope": "css,scss,sass",
+    "prefix": "breakpts",
+    "body": [
+      "/********************/",
+      "/* Adjustment for XS Size Screen*/",
+      "/********************/",
+      "@media (max-width: 576px) {",
+      "}",
+      "/********************/",
+      "/* Adjustment for SM Size Screen*/",
+      "/********************/",
+      "@media (min-width: 576px) and (max-width: 768px) {",
+      "}",
+      "/********************/",
+      "/* Adjustment for MD Size Screen*/",
+      "/********************/",
+      "@media (min-width: 768px) and (max-width: 992px) {",
+      "}",
+      "/********************/",
+      "/* Adjustment for LG Size Screen*/",
+      "/********************/",
+      "@media (min-width: 992px) and (max-width: 1200px) {",
+      "}",
+      "/********************/",
+      "/* Adjustment for XL Size Screen*/",
+      "/********************/",
+      "@media (min-width: 1200px) {",
+      "}"
+    ],
+    "description": "Scaffolds the Standard Bootstrap breakpoints"
   }
 }

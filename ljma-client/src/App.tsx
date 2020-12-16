@@ -11,6 +11,7 @@ import Typefaces from './constants/Typefaces'
 // Import Main App Components and Pagelets
 // ********************
 import Navbar from './components/Navbar'
+import IndependentContactPagelet from './components/IndependentContactPagelet'
 import Welcome from './pagelets/1Welcome/Welcome'
 import AboutUs from './pagelets/2AboutUs/AboutUs'
 import Courses from './pagelets/3Courses/Courses'
@@ -18,28 +19,29 @@ import ArtistDevelopmentProgram from './pagelets/4ArtistDevelopmentProgram/Artis
 import Exams from './pagelets/5Exams/Exams'
 import MeetTheTeachers from './pagelets/6MeetTheTeachers/MeetTheTeachers'
 import BookLessons from './pagelets/7BookLessons/BookLessons'
-
 const App = () => {
   console.info('Is Dev Mode:', isDev())
   return (
     <>
       <Router>
         <Route exact path='/'>
-          <AuditHoop variant='complete'>
+          <AuditHoop variant='pending-approval'>
             <Navbar />
           </AuditHoop>
-          <AuditHoop variant='pending-approval'>
+          <AuditHoop variant='wip'>
             <Welcome />
           </AuditHoop>
-          <AuditHoop variant='wip'>
-            <AboutUs />
-          </AuditHoop>
+          <AboutUs />
           <Courses />
           <ArtistDevelopmentProgram />
           <Exams />
           <MeetTheTeachers />
           <BookLessons />
           {isDev() && <Typefaces />}
+          <AuditHoop variant='complete'></AuditHoop>
+        </Route>
+        <Route exact path='/contact'>
+          <IndependentContactPagelet />
         </Route>
       </Router>
     </>

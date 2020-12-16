@@ -4,7 +4,9 @@
 .navbar-light {
   .navbar-nav {
     .nav-link {
-      color: var(--offBlack);
+      a {
+        color: var(--offBlack);
+      }
     }
   }
 }
